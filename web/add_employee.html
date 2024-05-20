@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+<head>
+    <title>ADD EMPLOYEE page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh; /* Full viewport height */
+        }
+        
+        input[type="submit"] {
+            background-color: blue;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-bottom: 20px; /* Adding some space below the button */
+            cursor: pointer;
+            border-radius: 5px; /* Adding rounded corners to the button */
+        }
+
+        input[type="submit"]:hover {
+            background-color: darkblue; /* Changing background color on hover */
+        }
+    </style>
+</head>
+<body style="background-image: url('car-wash-clipart-png-download.png'); background-size: cover; text-align: center;">
+
+<div class="container">
+    <form action="AddEmployeeServlet.do" method="POST" style="text-align: center;">
+        <table style="margin: 0 auto; text-align: center; background-color:whitesmoke; padding: 20px;">
+             <tr>
+                <td colspan="2"><h1 style="font-weight: bold; font-size: 40px;">ADD EMPLOYEE</h1></td>
+            </tr>
+            <tr>
+                <td style="text-align: right;">Employee Name: </td>
+                <td style="text-align: left;"><input type="text" name="empName" required=""></td>
+            </tr>
+            <tr>
+                <td style="text-align: right;">Date Of Birth: </td>
+                <td style="text-align: left;"><input type="date" name="dob" required=""></td>
+            </tr>
+            <tr>
+                <td style="text-align: right;">Gender:</td>
+                <td style="text-align: left;">
+                    <input type="radio"  name="gender" value="Male" checked="">
+                    <label for="id">Male</label>
+                    <input type="radio" name="gender" value="Female">
+                    <label for="id">Female</label>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: right;">Position : </td>
+                <td style="text-align: left;"><input type="text" name="position" required=""></td>
+            </tr>
+            <tr>
+                <td style="text-align: right;">Salary : </td>
+                <td style="text-align: left;"><input type="number" name="salary" required=""></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td style="text-align: center;"><input type="submit" value="ADD EMPLOYEE"></td>
+            </tr>
+        </table>
+    </form>
+</div>
+</body>
+</html>

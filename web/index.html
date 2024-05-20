@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+<head>
+    <title>Welcome Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Include Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/kTcXn+6dXcFR1yxy7dxPIgGZ1KsdbY24BO+xZ8do5SgTkN/F8llzzXYb3kaT1LS+inU5H/ADwPlHg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        input[type="submit"] {
+            background-color: blue;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-bottom: 20px; /* Adding some space below the button */
+            cursor: pointer;
+            border-radius: 5px; /* Adding rounded corners to the button */
+            animation: pulse 1s infinite; /* Adding pulse animation */
+        }
+
+        input[type="submit"]:hover {
+            background-color: darkblue; /* Changing background color on hover */
+        }
+
+        /* Define the pulse animation */
+        @keyframes pulse {
+            0% { transform: scale(0.95); }
+            50% { transform: scale(1); }
+            100% { transform: scale(0.95); }
+        }
+        
+        .social-icons a {
+            color: black; /* Change color as needed */
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 24px;
+        }
+
+        .social-icons a:hover {
+            color: blue; /* Change hover color as needed */
+        }
+    </style>
+</head>
+    
+<body style="background-image: url('car-wash-clipart-png-download.png'); background-size: cover; text-align: center;">
+    <table style="margin: 180px auto; text-align: center; background-color:whitesmoke; padding: 20px;">
+        <tr >
+            <td><h1 style="font-weight: bold; font-size: 40px;">Welcome</h1></td>
+        </tr>
+
+        <tr>
+            <td><p>Welcome to <b>Legends Car Wash And Valet </b> Page. Please Click the button below to get Started</p></td>
+        </tr>
+        <tr>
+            <td><a href="start.html"><input type="submit" value="GET STARTED"></a></td>
+        </tr>
+        <tr>
+            <td><b>Visit our social media pages to learn more about our us</b></td>
+        </tr>
+
+        <tr>
+            <td class="social-icons">
+                <a href="https://www.facebook.com/legendsXcarwash" target="_blank"><img src="facebook icon.png" width="50" height="50" alt="facebook"/><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/legend_carwash/" target="_blank"><img src="instagram icon.jpg" width="50" height="50" alt="instagram"/><i class="fab fa-instagram"></i></a>
+               
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

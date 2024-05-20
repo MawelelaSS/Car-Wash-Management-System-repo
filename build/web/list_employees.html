@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>List Employees Page</title>
+        <style>
+            body {
+                background-image: url('car-wash-clipart-png-download.png'); /* Set background image */
+                background-size: cover; /* Cover the entire viewport */
+                background-color: #ffffff; /* Set background color */
+                font-family: Arial, sans-serif; /* Set font */
+                margin: 0;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 80vh; /* Adjust height as needed */
+            }
+
+            table {
+                background-color: whitesmoke; /* Set table background color with opacity */
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+                margin: 10px auto; /* Center table horizontally */
+            }
+
+            h1 {
+                text-align: center;
+                margin-bottom: 20px;
+            }
+
+            td {
+                padding: 5px;
+            }
+
+            input[type="submit"] {
+                width: 100%;
+                padding: 10px;
+                margin: 5px 0;
+                border: none;
+                border-radius: 4px;
+                background-color: #007bff;
+                color: white;
+                cursor: pointer;
+            }
+
+            input[type="submit"]:hover {
+                background-color: #0056b3;
+            }
+        </style>
+    </head>
+    <body>
+       
+
+        <form action="GetAllEmployeeServlet.do" method="POST">
+            <table align="center">
+                <tr>
+                    <td><h1>GET ALL EMPLOYEE</h1></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Please Click the button below to get all the employees</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    
+                    <td><input type="submit" value="GET ALL EMPLOYEE"></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

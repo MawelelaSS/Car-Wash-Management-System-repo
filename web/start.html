@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>start page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-image: url('car-wash-clipart-png-download.png'); /* Set background image */
+            background-size: cover; /* Cover the entire viewport */
+            background-color: #ffffff; /* Set background color */
+            font-family: Arial, sans-serif; /* Set font */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh; /* Ensure full viewport height */
+        }
+
+        form {
+            background-color: whitesmoke; /* Set form background color with opacity */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            margin: 10px auto; /* Center form horizontally */
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        table {
+            margin: 0 auto; /* Center table horizontally */
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: blue;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-bottom: 20px; /* Adding some space below the button */
+            cursor: pointer;
+            border-radius: 5px; /* Adding rounded corners to the button */
+        }
+
+        input[type="submit"]:hover {
+            background-color: darkblue; /* Changing background color on hover */
+        }
+
+        a {
+            text-decoration: none;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+<form action="LoginServlet.do" method="POST">
+    <table align="center">
+        <tr>
+            <td></td>
+            <td><h1>Lets get Started</h1></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><p><b>Please Click Login if you already have an account OR Sign in to create an Account</b></p></td>
+        </tr>
+
+        <tr>
+            <td>Username: </td>
+            <td><input type="text" name="username"></td>
+        </tr>
+
+        <tr>
+            <td>Password: </td>
+            <td><input type="password" name="password" minlength="4" maxlength="10"></td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td><input type="submit" value="LOGIN"></td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td>Don't have an account? <a href="sign_in.html"><b>Sign up</b></a></td>
+        </tr>
+
+    </table>
+</form>
+</body>
+</html>
